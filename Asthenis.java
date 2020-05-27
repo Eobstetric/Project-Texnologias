@@ -1,13 +1,12 @@
-package module_info;
 public class Asthenis {
     
-    private String username;
-    private String password;
-    private int amka;
-    private String email;
-    private String name;
-    private String surname;
-    private String path_photo;
+    private final String username;
+    private final String password;
+    private final int amka;
+    private final String email;
+    private final String name;
+    private final String surname;
+    private final String path_photo;
     
     public Asthenis(String username, String password, int amka, String email, String name, String surname, String path_photo)
     
