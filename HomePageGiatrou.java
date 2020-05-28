@@ -34,10 +34,25 @@ public class HomePageGiatrou extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jButton1.setText("Εισαγωγή Διαθεσιμότητας");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Μηνύματα Από Ασθενείς");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("Επεξεργασία Λογαριασμού");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("Τα Στατιστικά Μου");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -54,8 +69,18 @@ public class HomePageGiatrou extends javax.swing.JFrame {
         });
 
         jButton6.setText("Οι Ασθενείς Μου");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         jButton7.setText("Προβολή Τοκετών");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         jButton8.setText("Αποσύνδεση");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
@@ -186,19 +211,83 @@ public class HomePageGiatrou extends javax.swing.JFrame {
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         
+        //koumpi gia tin aposindesi
+        
         this.setVisible(false);
-        HomePageGiatrou rant = new HomePageGiatrou();
+        LoginPageGiatrou rant = new LoginPageGiatrou();
         rant.setVisible(true);
         
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
        
+        //koumpi gia provoli rantebou giatrou
+        
+        this.setVisible(false);
+        RantebouPageGiatrou rant = new RantebouPageGiatrou();
+        rant.setVisible(true);
+        
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
+      
+        //koumpi gia ta statistika tou giatrou
+        
+        this.setVisible(false);
+        DisplayStatisticsPageGiatrou rant = new DisplayStatisticsPageGiatrou();
+        rant.setVisible(true);
+        
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+
+        //koumpi gia lista asthenon
+        
+        this.setVisible(false);
+        AsthenisListPageGiatrou rant = new AsthenisListPageGiatrou();
+        rant.setVisible(true);
+        
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        
+        //koumpi gia provoli toketon
+        
+        this.setVisible(false);
+        ToketosPageGiatrou rant = new ToketosPageGiatrou();
+        rant.setVisible(true);
+        
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        
+        //koumpi gia epexergasia profile giatrou
+        
+        this.setVisible(false);
+        EditPageGiatrou rant = new EditPageGiatrou();
+        rant.setVisible(true);
+        
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        
+        //koumpi gia provoli minimaton apo asthenis
+        
+        this.setVisible(false);
+        MessagePageGiatrou rant = new MessagePageGiatrou();
+        rant.setVisible(true);
+        
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        
+        //koumpi gia tin eisagogi diathesimotitas tou giatrou
+        
+        this.setVisible(false);
+        AvailabilityPageGiatrou1 rant = new AvailabilityPageGiatrou1();
+        rant.setVisible(true);
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     
     public static void main(String args[]) {
