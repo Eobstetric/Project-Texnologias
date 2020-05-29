@@ -1,3 +1,4 @@
+package source_code;
 
 public class AvailabilityPageGiatrou2 extends javax.swing.JFrame {
 

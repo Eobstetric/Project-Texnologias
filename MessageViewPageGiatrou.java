@@ -1,3 +1,4 @@
+package source_code;
 
 public class MessageViewPageGiatrou extends javax.swing.JFrame {
 

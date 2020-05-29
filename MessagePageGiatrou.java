@@ -1,3 +1,4 @@
+package source_code;
 
 public class MessagePageGiatrou extends javax.swing.JFrame {
 

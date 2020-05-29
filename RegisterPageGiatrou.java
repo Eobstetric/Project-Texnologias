@@ -1,3 +1,4 @@
+package source_code;
 
 public class RegisterPageGiatrou extends javax.swing.JFrame {
 
