@@ -29,6 +29,11 @@ public class StatistikaGiatrwn extends javax.swing.JFrame {
         jButton1.setText("ΑΠΟΘΗΚΕΥΣΗ");
 
         jButton2.setText("ΠΙΣΩ");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("ΜΕΓΑΛΥΤΕΡΑ ΕΣΟΔΑ ΠΡΩΤΑ");
 
@@ -104,6 +109,12 @@ public class StatistikaGiatrwn extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+       this.setVisible(false);
+       HomePageDieuthinti dieuth=new HomePageDieuthinti();
+       dieuth.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     
     public static void main(String args[]) {

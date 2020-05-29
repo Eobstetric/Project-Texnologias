@@ -22,10 +22,20 @@ public class HomePageDieuthinti extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jButton1.setText("ΟΙΚΟΝΟΜΙΚΑ ΣΤΟΙΧΕΙΑ ΚΛΙΝΙΚΗΣ");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("ΑΝΑΖΗΤΗΣΗ ΧΡΗΣΤΩΝ");
 
         jButton3.setText("ΣΤΑΤΙΣΤΙΚΑ ΓΙΑΤΡΩΝ");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("ΑΠΟΣΥΝΔΕΣΗ");
 
@@ -60,6 +70,18 @@ public class HomePageDieuthinti extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        this.setVisible(false);
+        ProboliOikonomikwnStoixeiwn oikon= new ProboliOikonomikwnStoixeiwn();
+        oikon.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+       this.setVisible(false);
+       StatistikaGiatrwn stat=new StatistikaGiatrwn();
+       stat.setVisible(true);
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     
     public static void main(String args[]) {
