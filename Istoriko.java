@@ -1,15 +1,13 @@
-package module_info;
-
 public class Istoriko {
 	
-	private String amka;
-	private String energeia;
-	private String sxolia;
-	private String date_katagrafis;
-	private String hour_katagrafis;
-	private String id_energeias;
+	private  int amka;
+	private  String energeia;
+	private  String sxolia;
+	private  String date_katagrafis;
+	private  String hour_katagrafis;
+	private  String id_energeias;
 	
-	public Istoriko(String amka, String energeia, String sxolia, String date_katagrafis, String hour_katagrafis, String id_energeias)
+	public Istoriko(int amka, String energeia, String sxolia, String date_katagrafis, String hour_katagrafis, String id_energeias)
 	{
 		this.amka = amka;
 		
@@ -24,7 +22,7 @@ public class Istoriko {
 		this.id_energeias = id_energeias;
 	}
 
-	public String get_amka()
+	public int get_amka()
 	{
 		return amka;
 	}

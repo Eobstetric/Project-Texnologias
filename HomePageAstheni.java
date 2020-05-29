@@ -1,15 +1,5 @@
 package source_code;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author 7_USER
- */
 public class HomePageAstheni extends javax.swing.JFrame {
 
     /**
@@ -51,8 +41,18 @@ public class HomePageAstheni extends javax.swing.JFrame {
         jButton4.setText("ΑΠΟΣΥΝΔΕΣΗ");
 
         jButton5.setText("ΤΟ ΙΣΤΟΡΙΚΟ ΜΟΥ");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         jButton6.setText("ΟΙ ΓΙΑΤΡΟΙ ΤΗΣ ΚΛΙΝΙΚΗΣ");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -93,10 +93,25 @@ public class HomePageAstheni extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        //TA RANTEBOU MOU
         this.setVisible(false);
         PageRantebouAstheni rant = new PageRantebouAstheni();
         rant.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TΟ ΙΣΤΟΡΙΚΟ ΜΟΥ
+        this.setVisible(false);
+        PageIstoriko rant = new PageIstoriko();
+        rant.setVisible(true);
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // OI GIATROI THS KLINIKHS
+        this.setVisible(false);
+         PageGiatroiKlinikis rant = new PageGiatroiKlinikis();
+        rant.setVisible(true);
+    }//GEN-LAST:event_jButton6ActionPerformed
 
     /**
      * @param args the command line arguments
