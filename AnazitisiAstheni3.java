@@ -33,6 +33,11 @@ public class AnazitisiAstheni3 extends javax.swing.JFrame {
         });
 
         jButton1.setText("ΠΙΣΩ");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -102,6 +107,12 @@ public class AnazitisiAstheni3 extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+       this.setVisible(false);
+       AnazitisiAstheni2 anaz2=new AnazitisiAstheni2();
+       anaz2.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     
     public static void main(String args[]) {

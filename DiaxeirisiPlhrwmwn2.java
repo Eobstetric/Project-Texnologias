@@ -33,8 +33,18 @@ public class DiaxeirisiPlhrwmwn2 extends javax.swing.JFrame {
         });
 
         jButton1.setText("ΠΙΣΩ");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("ΕΠΟΜΕΝΟ");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -80,6 +90,18 @@ public class DiaxeirisiPlhrwmwn2 extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        this.setVisible(false);
+        DiaxeirisiPlhrwmwn1 plhrwm1=new DiaxeirisiPlhrwmwn1();
+        plhrwm1.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        this.setVisible(false);
+        DiaxeirisiPlhrwmwn3 plhrwm3= new DiaxeirisiPlhrwmwn3();
+        plhrwm3.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
    
     public static void main(String args[]) {

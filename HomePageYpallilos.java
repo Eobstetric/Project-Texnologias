@@ -33,8 +33,18 @@ public class HomePageYpallilos extends javax.swing.JFrame {
         jButton2.setText("ΑΠΟΔΟΧΗ ΕΓΓΡΑΦΩΝ ΓΙΑΤΡΩΝ");
 
         jButton3.setText("ΔΙΑΧΕΙΡΙΣΗ ΠΛΗΡΩΜΩΝ");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("ΑΝΑΖΗΤΗΣΗ ΧΡΗΣΤΩΝ");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jButton5.setText("ΕΠΕΞΕΡΓΑΣΙΑ ΛΟΓΑΡΙΑΣΜΟΥ");
 
@@ -86,8 +96,22 @@ public class HomePageYpallilos extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
+          this.setVisible(false);
+          ApodoxiEggrafwnAsthenwn registr=new ApodoxiEggrafwnAsthenwn();
+          registr.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+            this.setVisible(false);
+            AnazitisiAstheni1 anaz1 = new AnazitisiAstheni1();
+            anaz1.setVisible(true);
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        this.setVisible(false);
+        DiaxeirisiPlhrwmwn1 plhrwm1=new DiaxeirisiPlhrwmwn1();
+        plhrwm1.setVisible(true);
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     
     public static void main(String args[]) {

@@ -25,10 +25,20 @@ public class AnazitisiAstheni1 extends javax.swing.JFrame {
         jLabel1.setText("Aναζήτηση");
 
         jButton1.setText("ΠΙΣΩ");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jLabel2.setText("Επιλέξτε τον τύπο του χρήστη που αναζητείτε:");
 
         jButton2.setText("ΑΝΑΖΗΤΗΣΗ ΑΣΘΕΝΗ");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("ΑΝΑΖΗΤΗΣΗ ΓΙΑΤΡΟΥ");
 
@@ -72,6 +82,18 @@ public class AnazitisiAstheni1 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+           this.setVisible(false);
+           AnazitisiAstheni2 anaz2=new AnazitisiAstheni2();
+           anaz2.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        this.setVisible(false);
+        HomePageYpallilos ypal=new HomePageYpallilos();
+        ypal.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     
     public static void main(String args[]) {

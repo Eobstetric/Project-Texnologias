@@ -29,6 +29,11 @@ public class AnazitisiAstheni2 extends javax.swing.JFrame {
         jLabel1.setText("Λιστα Ασθενων");
 
         jButton1.setText("ΠΙΣΩ");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -44,8 +49,18 @@ public class AnazitisiAstheni2 extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         jButton2.setText("ΙΣΤΟΡΙΚΟ");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("ΙΣΤΟΡΙΚΟ");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jLabel2.setText("Αναζήτηση με ΑΜΚΑ");
 
@@ -116,6 +131,24 @@ public class AnazitisiAstheni2 extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
      
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+            this.setVisible(false);
+            AnazitisiAstheni1 anaz1=new AnazitisiAstheni1();
+            anaz1.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+             this.setVisible(false);
+             AnazitisiAstheni3 anaz3=new AnazitisiAstheni3();
+             anaz3.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+             this.setVisible(false);
+             AnazitisiAstheni3 anaz3=new AnazitisiAstheni3();
+             anaz3.setVisible(true);
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     
     public static void main(String args[]) {

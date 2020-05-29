@@ -44,6 +44,11 @@ public class ApodoxiEggrafwnAsthenwn extends javax.swing.JFrame {
         jLabel1.setText("Λίστα Εκκρεμών Εγγραφών Ασθενών");
 
         jButton2.setText("ΠΙΣΩ");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -66,8 +71,18 @@ public class ApodoxiEggrafwnAsthenwn extends javax.swing.JFrame {
         });
 
         jButton4.setText("ΠΡΟΒΟΛΗ");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jButton5.setText("ΠΡΟΒΟΛΗ");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -116,8 +131,28 @@ public class ApodoxiEggrafwnAsthenwn extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
+            this.setVisible(false);
+            ApodoxiAporipsiAstheni apod = new ApodoxiAporipsiAstheni();
+            apod.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        this.setVisible(false);
+        HomePageYpallilos ypal = new HomePageYpallilos();
+        ypal.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+            this.setVisible(false);
+            ApodoxiAporipsiAstheni apod = new ApodoxiAporipsiAstheni();
+            apod.setVisible(true);
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+            this.setVisible(false);
+            ApodoxiAporipsiAstheni apod = new ApodoxiAporipsiAstheni();
+            apod.setVisible(true);
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     
     public static void main(String args[]) {
