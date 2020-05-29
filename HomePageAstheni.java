@@ -1,13 +1,27 @@
 package source_code;
 
 public class HomePageAstheni extends javax.swing.JFrame {
+    
+    
+    Asthenis asthenis;
 
+    
+    public HomePageAstheni(Asthenis a) {
+         
+         asthenis = a;
+        initComponents();
+    }
     /**
      * Creates new form HomePageAstheni
      */
     public HomePageAstheni() {
         initComponents();
     }
+    
+    
+    
+     
+    
 
     /**
      * This method is called from within the constructor to initialize the form.

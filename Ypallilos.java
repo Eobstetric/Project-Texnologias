@@ -1,13 +1,11 @@
-package module_info;
-
 public class Ypallilos {
 
-	private String username;
-    private String password;
-    private int at;
-    private String email;
-    private String name;
-    private String surname;
+    private final String username;
+    private final String password;
+    private final int at;
+    private final String email;
+    private final String name;
+    private final String surname;
     
    public Ypallilos(String username, String password, int at, String email, String name, String surname)
    

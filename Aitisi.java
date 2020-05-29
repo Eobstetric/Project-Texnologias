@@ -1,5 +1,3 @@
-package module_info;
-
 public class Aitisi {
 
     private int kodikos;

@@ -85,11 +85,6 @@ public class RegisterPageAstheni extends javax.swing.JFrame {
         });
 
         jButton2.setText("Επιλογή Αρχεόυ....");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
 
         jButton3.setText("ΕΓΓΡΑΦΗ");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -148,7 +143,7 @@ public class RegisterPageAstheni extends javax.swing.JFrame {
                         .addComponent(jButton1)
                         .addGap(48, 48, 48)
                         .addComponent(jButton3)))
-                .addGap(174, 174, 174))
+                .addGap(176, 176, 176))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -188,11 +183,11 @@ public class RegisterPageAstheni extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // ΠΙΣΩ
+        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // ΕΓΓΡΑΦΗ
+        // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -202,10 +197,6 @@ public class RegisterPageAstheni extends javax.swing.JFrame {
     private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField7ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // ΕΠΙΛΟΓΗ ΑΡΧΕΙΟΥ
-    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

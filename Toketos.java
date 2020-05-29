@@ -1,14 +1,12 @@
-package module_info;
-
 public class Toketos {
 
-	private String id_toketou;
-	  private int amka_astheni;
-	  private String at_giatrou;
-	  private String date;
-	  private int hour;
-	  private String aithousa;
-	  private String sxolia;
+          private final String id_toketou;
+	  private final int amka_astheni;
+	  private final String at_giatrou;
+	  private final String date;
+	  private final int hour;
+	  private final String aithousa;
+	  private final String sxolia;
 	  
 	  
 	  

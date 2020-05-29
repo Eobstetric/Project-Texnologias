@@ -1,8 +1,8 @@
 package module_info;
 public class Dieuthintis {
     
-    private String username;
-    private String password;
+    private final String username;
+    private final String password;
     
     public Dieuthintis(String username, String password)
             

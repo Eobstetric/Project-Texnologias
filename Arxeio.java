@@ -1,5 +1,3 @@
-package module_info;
-
 public class Arxeio {
 
 	private String kodikos_kataxorisis;

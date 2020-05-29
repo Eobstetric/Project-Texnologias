@@ -1,3 +1,5 @@
+package source_code;
+
 public class Istoriko {
 	
 	private  int amka;
