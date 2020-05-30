@@ -2,7 +2,7 @@ package source_code;
 
 public class Vathmologia {
 
-int id_rantevou;
+    int id_rantevou;
     
     int vathmologia;
     

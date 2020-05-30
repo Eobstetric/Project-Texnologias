@@ -2,10 +2,10 @@ package module_info;
 
 public class Pliromi {
 	
-	private final String kodikos_pliromis;
-    private final String id_rantevou;
-    private final String id_toketou;
-    private final double poso;
+    private  String kodikos_pliromis;
+    private  String id_rantevou;
+    private  String id_toketou;
+    private  double poso;
     
     public Pliromi(String kodikos_pliromis, String id_rantevou, String id_toketou, double poso)
     {

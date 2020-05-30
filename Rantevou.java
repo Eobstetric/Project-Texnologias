@@ -3,7 +3,7 @@ package source_code;
 
 public class Rantevou {
 
-private int kodikos;
+    private int kodikos;
     
     private int amka_asth;
     
@@ -11,9 +11,9 @@ private int kodikos;
     
     private String date;
     
-    int hour;
+    private int hour;
     
-    String sxolia;
+    private String sxolia;
     
     public Rantevou(int kodikos, int amka_asth, String at_giatrou, String date, int hour, String sxolia)
             

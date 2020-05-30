@@ -1,16 +1,18 @@
+package source_code;
+
 public class Toketos {
 
-          private final String id_toketou;
-	  private final int amka_astheni;
-	  private final String at_giatrou;
-	  private final String date;
-	  private final int hour;
-	  private final String aithousa;
-	  private final String sxolia;
+          private  int id_toketou;
+	  private  int amka_astheni;
+	  private  String at_giatrou;
+	  private  String date;
+          private  int hour;
+	  private  String aithousa;
+	  private  String sxolia;
 	  
 	  
 	  
-	  public Toketos(String id_toketou, int amka_astheni, String at_giatrou, String date, int hour, String aithousa, String sxolia)
+	  public Toketos(int id_toketou, int amka_astheni, String at_giatrou, String date, int hour, String aithousa, String sxolia)
 
 	  {
 	      this.id_toketou = id_toketou;
@@ -24,7 +26,7 @@ public class Toketos {
 	  
 	  }
 
-	  public String get_id_toketou()
+	  public int get_id_toketou()
 	  {
 	  
 	    return id_toketou;
