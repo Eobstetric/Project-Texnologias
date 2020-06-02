@@ -1,38 +1,31 @@
-package module_info;
+package source_code;
 
 public class Pliromi {
 	
-    private  String kodikos_pliromis;
-    private  String id_rantevou;
-    private  String id_toketou;
+    private  int kodikos_pliromis;
+    private  int id_energeias;
     private  double poso;
     
-    public Pliromi(String kodikos_pliromis, String id_rantevou, String id_toketou, double poso)
+    public Pliromi(int kodikos_pliromis,int id_energeias, double poso)
     {
     	this.kodikos_pliromis = kodikos_pliromis;
-    	
-    	this.id_rantevou = id_rantevou;
-    	
-    	this.id_toketou = id_toketou;
+    	    	
+    	this.id_energeias = id_energeias;
     	
     	this.poso = poso;
     }
     
-    public String get_kodikos_pliromis()
+    public int get_kodikos_pliromis()
     {
     	return kodikos_pliromis;
     }
     
-    public String get_id_rantevou()
+    public int get_id_energeias()
     {
-    	return id_rantevou;
+    	return id_energeias;
     }
     
-    public String get_id_toketou()
-    {
-    	return id_toketou;
-    }
-    
+       
     public double get_poso()
     {
     	return poso;

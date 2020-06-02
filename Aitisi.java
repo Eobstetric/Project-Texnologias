@@ -76,4 +76,10 @@ public class Aitisi {
     {
     	return state;
     }
+    
+    public void set_state(String s)
+            
+    {
+        state = s;
+    }
 }
