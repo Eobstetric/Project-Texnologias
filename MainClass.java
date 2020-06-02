@@ -9,10 +9,7 @@ package source_code;
 import java.util.*;
 
 
-/**
- *
- * @author User
- */
+
 public class MainClass {
     
     public static ArrayList<Asthenis> asth_list = new ArrayList<Asthenis>();
@@ -47,6 +44,38 @@ public class MainClass {
         Asthenis as1 = new Asthenis("stavros","1234", 12345678,"stavros@gmail.com","A","B", "C/documents/downloads");
         asth_list.add(as1);
     }
+    
+    public static Asthenis get_asthenis_amka(int amka)
+            
+    {
+        
+        Asthenis asthenis = null;
+        
+        for(Asthenis a: MainClass.asth_list)
+            
+        {
+            
+            if(a.get_amka()==amka)
+                
+            {
+                
+                asthenis = a;
+                
+                break;
+            
+        }
+        
+        
+    }
+                return asthenis;
+
+    }   
+    
+    
+    
+    
+    
+    
     
     
     public static Asthenis get_asthenis(String username)
