@@ -1,5 +1,6 @@
 package source_code;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Ypallilos {
@@ -58,7 +59,7 @@ public class Ypallilos {
        return surname;
    }
 
-   void accept_astenis_request(Aitisi a)
+   void accept_asthenis_request(Aitisi a)
            
    {
        
@@ -146,4 +147,138 @@ public class Ypallilos {
    
    
    
-}
+   
+   void reject_pliromi(Rantevou r)
+           
+   {
+       
+              
+       MainClass.rant_list.remove(r);
+   }
+           
+   
+   void reject_pliromi(Toketos k)
+           
+   {
+       
+       
+       MainClass.toketos_list.remove(k);
+   }
+   
+   
+   
+   ArrayList<Asthenis> get_asthenis_list()
+           
+   {
+       
+   ArrayList<Asthenis> temp = new ArrayList<Asthenis>();
+   
+   for(Asthenis a:MainClass.asth_list)
+       
+   {
+    temp.add(a);   
+   }
+   
+   return temp;
+   }
+       
+   ArrayList<Giatros> get_giatroi_list()
+           
+   {
+       
+       
+       ArrayList<Giatros> temp = new ArrayList<Giatros>();
+       
+       
+       for(Giatros g: MainClass.giatr_list)
+           
+       {
+           
+          temp.add(g);
+       }
+   
+       return temp;
+   }
+   
+ Asthenis searh_astheni(int amka)
+ {
+    Asthenis p = null;
+    
+    for(Asthenis a: MainClass.asth_list)
+        
+    {
+      if(a.get_amka()==amka)
+      {
+          p = a;
+          
+          break;
+      }
+    }
+    return p;
+     
+ }
+         
+ Giatros search_giatro(String at)
+         
+ {
+     
+     Giatros p = null;
+     
+     for(Giatros g: MainClass.giatr_list)
+         
+     {
+      if(g.get_at().equals(at))
+      {
+       p=g;
+       
+       break;
+      }
+     }
+     return p;
+     }
+ 
+Giatros view_profil_giatrou(Giatros g)
+
+{
+    
+    Giatros giat= null;
+
+    for(Giatros temp: MainClass.giatr_list)
+        
+    {
+    
+        if(temp.get_at().equals(g.get_at()))
+        
+        {
+            giat = temp;
+        }
+    }
+    
+  return giat;
+} 
+
+
+Asthenis view_profil_giatrou(Asthenis g)
+
+{
+    
+    Asthenis as= null;
+
+    for(Asthenis temp: MainClass.asth_list)
+        
+    {
+    
+        if(temp.get_amka()==g.get_amka())
+        
+        {
+            as = temp;
+        }
+    }
+    
+  return as;
+} 
+
+ 
+ }
+ 
+
