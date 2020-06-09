@@ -258,7 +258,7 @@ Giatros view_profil_giatrou(Giatros g)
 } 
 
 
-Asthenis view_profil_giatrou(Asthenis g)
+Asthenis view_profil_astheni(Asthenis a)
 
 {
     
@@ -268,7 +268,7 @@ Asthenis view_profil_giatrou(Asthenis g)
         
     {
     
-        if(temp.get_amka()==g.get_amka())
+        if(temp.get_amka()==a.get_amka())
         
         {
             as = temp;
